@@ -4,7 +4,7 @@ const Projects = require('../data/helpers/projectModel.js')
 const Actions = require('../data/helpers/actionModel.js')
 const router = express.Router();
 
-// post project
+// post project(works)
 router.post('/', validateProject, (req, res) => {
 
     let project = req.body
@@ -20,7 +20,7 @@ router.post('/', validateProject, (req, res) => {
         })
 })
 
-// post ith action
+// post ith action(works)
 router.post('/:id/actions', validateProjectId, validateAction, (req, res) => {
 
     let id = req.params.id
@@ -37,7 +37,7 @@ router.post('/:id/actions', validateProjectId, validateAction, (req, res) => {
         })
 })
 
-// get projects
+// get projects(works)
 router.get('/', (req, res) => {
 
     Projects.get()
@@ -50,7 +50,7 @@ router.get('/', (req, res) => {
         })
 })
 
-// get ith project
+// get ith project(works)
 router.get('/:id', validateProjectId, (req, res) => {
 
     let id = req.params.id
@@ -68,7 +68,7 @@ router.get('/:id', validateProjectId, (req, res) => {
 
 
 
-// get ith action
+// get ith action(works)
 router.get('/:id/actions', validateProjectId, (req, res) => {
 
     let id = req.params.id
@@ -82,7 +82,7 @@ router.get('/:id/actions', validateProjectId, (req, res) => {
 
         })
 })
-// delete ith project
+// delete ith project(works)
 router.delete('/:id', validateProjectId, (req, res) => {
 
     let id = req.params.id
@@ -98,7 +98,7 @@ router.delete('/:id', validateProjectId, (req, res) => {
         })
 })
 
-// modify ith project
+// modify ith project(works)
 router.put('/:id', validateProjectId, validateProject, (req, res) => {
 
     let id = req.params.id
