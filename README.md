@@ -39,14 +39,24 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+    
+    Express is like React for frontend but for backend.  Express allows you to make server systems.  It comes with middleware, modular routing, views(can show the output of res to the webpage), and helper functions for support.
 
 - [ ] Describe Middleware?
+    
+    Middleware are functions that are run before the enpoints run.  It's used for validating, loggin in, or anything else you wish to run before running an enpoint.
 
 - [ ] Describe a Resource?
 
+    A Resource is data used to solved a problem for a user.  It's memory, data from knex, login info, and lot of other things.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    The API can return the data requested.  It can also send a code staying the request was a success.
+
 - [ ] How can we partition our application into sub-applications?
+
+    We can use folders to divide up the application.
 
 ## Minimum Viable Product
 
